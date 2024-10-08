@@ -18,3 +18,5 @@ companyNameDOM.textContent = companyData.name
 let tittlecompanyNameDOM = document.getElementById("tittlecompanyName");
 tittlecompanyNameDOM.textContent = companyData.name
 
+let imageHeroDOM = document.getElementById("companyImage")
+imageHeroDOM.src = companyData.imageUrl
