@@ -20,3 +20,11 @@ tittlecompanyNameDOM.textContent = companyData.name
 
 let imageHeroDOM = document.getElementById("companyImage")
 imageHeroDOM.src = companyData.imageUrl
+
+let companyClaimDOM = document.getElementById("companyClaim")
+companyClaimDOM.textContent = companyData.claim
+
+let companyTextDOM = document.getElementById("companyText")
+companyTextDOM.textContent = companyData.text
+
+
