@@ -9,3 +9,12 @@ const companyData = {
 };
 
 console.log(companyData);
+
+
+
+let companyNameDOM = document.getElementById("companyName");
+companyNameDOM.textContent = companyData.name
+
+let tittlecompanyNameDOM = document.getElementById("tittlecompanyName");
+tittlecompanyNameDOM.textContent = companyData.name
+
