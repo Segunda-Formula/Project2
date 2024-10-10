@@ -33,6 +33,7 @@ let root = document.documentElement
 root.style.setProperty ("--primary-color",companyData.primaryColor)
 root.style.setProperty ("--back-color",companyData.backgroundColor)
 
+// Boton save
 let botonEditCompanyDOM= document.getElementById("editCompanyBtn")
 let companyFormDOM = document.getElementById("companyForm")
 
@@ -112,3 +113,17 @@ let novedadesyofertas =[
 
 
 }]
+//save boton Personalizar productos
+let editProductBtnDOM= document.getElementById("editProductBtn")
+let productFormDOM = document.getElementById("productForm")
+
+
+editProductBtnDOM.addEventListener('click', function() {
+  productFormDOM.classList.remove('hidden')
+});
+
+let closeProductFormBtnDOM = document.getElementById("closeProductFormBtn")
+
+closeProductFormBtnDOM.addEventListener('click', function() {
+  productFormDOM.classList.add('hidden')
+});
