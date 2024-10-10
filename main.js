@@ -27,7 +27,9 @@ companyClaimDOM.textContent = companyData.claim
 let companyTextDOM = document.getElementById("companyText")
 companyTextDOM.textContent = companyData.text
 
-let nuevocolor = companyData.backgroundColor
 
-let primaryColorInputDOM = document.getElementsByClassName("container")
-primaryColorInputDOM.style.backgroundColor = "red"
+
+let root = document.documentElement
+root.style.setProperty ("--primary-color",companyData.primaryColor)
+root.style.setProperty ("--back-color",companyData.backgroundColor)
+
