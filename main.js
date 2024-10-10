@@ -74,3 +74,16 @@ let companyTextInputDOM =document.getElementById("companyTextInput")
 
 companyTextInputDOM.textContent=companyData.text
 
+let buttonSaveDOM = document.getElementById ("buttonSave")
+
+buttonSaveDOM.addEventListener ("click", function(event) {
+  event.preventDefault()
+  companyNameDOM.textContent = companynameinputDOM.value
+  tittlecompanyNameDOM.textContent = companynameinputDOM.value
+  imageHeroDOM.src = companyImageURLInputDOM.value
+  companyClaimDOM.textContent = companyClaimInputDOM.value
+  companyTextDOM.textContent = companyTextInputDOM.value
+  root.style.setProperty ("--primary-color",primaryColorInputDOM.value)
+  root.style.setProperty ("--back-color",backgroundColorInputDOM.value)
+})
+
