@@ -85,5 +85,6 @@ buttonSaveDOM.addEventListener ("click", function(event) {
   companyTextDOM.textContent = companyTextInputDOM.value
   root.style.setProperty ("--primary-color",primaryColorInputDOM.value)
   root.style.setProperty ("--back-color",backgroundColorInputDOM.value)
+  companyFormDOM.classList.add('hidden')
 })
 
