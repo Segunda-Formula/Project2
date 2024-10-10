@@ -46,3 +46,31 @@ let closeCompanyFormBtnDOM = document.getElementById("closeCompanyFormBtn")
 closeCompanyFormBtnDOM.addEventListener('click', function() {
   companyFormDOM.classList.add('hidden')
 });
+
+// nacho
+
+let companynameinputDOM =document.getElementById("companyNameInput")
+
+companynameinputDOM.setAttribute("value",companyData.name)
+
+
+let companyImageURLInputDOM =document.getElementById("companyImageURLInput")
+
+companyImageURLInputDOM.setAttribute("value",companyData.imageUrl)
+
+let primaryColorInputDOM =document.getElementById("primaryColorInput")
+
+primaryColorInputDOM.setAttribute("value",companyData.primaryColor)
+
+let backgroundColorInputDOM= document.getElementById("backgroundColorInput")
+
+backgroundColorInputDOM.setAttribute("value",companyData.backgroundColor)
+
+let companyClaimInputDOM =document.getElementById("companyClaimInput")
+
+companyClaimInputDOM.setAttribute("value",companyData.claim)
+
+let companyTextInputDOM =document.getElementById("companyTextInput")
+
+companyTextInputDOM.textContent=companyData.text
+
