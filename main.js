@@ -100,7 +100,7 @@ let novedadesyofertas =[
 {
 
   imagen:"https://www.percyphoto.com/2807-large_default/tripode-fotopro-dv-2-video.jpg",
-  nompbre:"Tripode Fotopro DV-2 video",
+  nombre:"Tripode Fotopro DV-2 video",
   precio :"159$"
 
 
@@ -108,7 +108,7 @@ let novedadesyofertas =[
 {
 
   imagen: "https://www.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2023/02/nikon-d3200-2951910.jpg",
-  nompbre: "camara nikon",
+  nombre: "camara nikon",
   precio: "450$"
 
 
@@ -127,3 +127,38 @@ let closeProductFormBtnDOM = document.getElementById("closeProductFormBtn")
 closeProductFormBtnDOM.addEventListener('click', function() {
   productFormDOM.classList.add('hidden')
 });
+
+
+//objeto 1 del array get and set
+
+let productImageURLInput1DOM = document.getElementById ("productImageURLInput1")
+productImageURLInput1DOM.setAttribute("value",novedadesyofertas[0].imagen)
+
+let productNameInput1DOM= document.getElementById("productNameInput1")
+productNameInput1DOM.setAttribute("value",novedadesyofertas[0].nombre)
+
+let productPriceInput1DOM = document.getElementById ("productPriceInput1")
+productPriceInput1DOM.setAttribute("value",novedadesyofertas[0].precio)
+
+//objeto 2
+
+let productImageURLInput2DOM = document.getElementById("productImageURLInput2")
+productImageURLInput2DOM.setAttribute("value",novedadesyofertas[1].imagen)
+
+
+let productNameInput2DOM= document.getElementById("productNameInput2")
+productNameInput2DOM.setAttribute("value",novedadesyofertas[1].nombre)
+
+let productPriceInput2DOM = document.getElementById ("productPriceInput2")
+productPriceInput2DOM.setAttribute("value",novedadesyofertas[1].precio)
+
+//OBJETO 3
+let productImageURLInput3DOM = document.getElementById("productImageURLInput3")
+productImageURLInput3DOM.setAttribute("value",novedadesyofertas[2].imagen)
+
+
+let productNameInput3DOM= document.getElementById("productNameInput3")
+productNameInput3DOM.setAttribute("value",novedadesyofertas[2].nombre)
+
+let productPriceInput3DOM = document.getElementById ("productPriceInput3")
+productPriceInput3DOM.setAttribute("value",novedadesyofertas[2].precio)
