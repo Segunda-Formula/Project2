@@ -162,3 +162,37 @@ productNameInput3DOM.setAttribute("value",novedadesyofertas[2].nombre)
 
 let productPriceInput3DOM = document.getElementById ("productPriceInput3")
 productPriceInput3DOM.setAttribute("value",novedadesyofertas[2].precio)
+
+
+
+//BOTON SALVAR MODIFICACIONES
+
+
+let imagenproducto1DOM= document.getElementById("imagenproducto1")
+let nombreproducto1DOM=document.getElementById("nombreproducto1")
+let precioproducto1DOM= document.getElementById("precioproducto1")
+
+let imagenproducto2DOM= document.getElementById("imagenproducto2")
+let nombreproducto2DOM=document.getElementById("nombreproducto2")
+let precioproducto2DOM= document.getElementById("precioproducto2")
+
+let imagenproducto3DOM= document.getElementById("imagenproducto3")
+let nombreproducto3DOM=document.getElementById("nombreproducto3")
+let precioproducto3DOM= document.getElementById("precioproducto3")
+
+
+//boton salvar
+let buttonSaveProductsDOM = document.getElementById ("buttonSaveProducts")
+buttonSaveProductsDOM.addEventListener ("click", function(event) {
+  event.preventDefault()
+ 
+  imagenproducto1DOM.src= productImageURLInput1DOM.value
+  nombreproducto1DOM.textContent= productNameInput1DOM.value
+  precioproducto1DOM.textContent= productPriceInput1DOM.value
+
+
+
+
+
+  companyFormDOM.classList.add('hidden')
+})
