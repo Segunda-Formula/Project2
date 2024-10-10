@@ -33,3 +33,16 @@ let root = document.documentElement
 root.style.setProperty ("--primary-color",companyData.primaryColor)
 root.style.setProperty ("--back-color",companyData.backgroundColor)
 
+let botonEditCompanyDOM= document.getElementById("editCompanyBtn")
+let companyFormDOM = document.getElementById("companyForm")
+
+
+botonEditCompanyDOM.addEventListener('click', function() {
+  companyFormDOM.classList.remove('hidden')
+});
+
+let closeCompanyFormBtnDOM = document.getElementById("closeCompanyFormBtn")
+
+closeCompanyFormBtnDOM.addEventListener('click', function() {
+  companyFormDOM.classList.add('hidden')
+});
