@@ -88,3 +88,27 @@ buttonSaveDOM.addEventListener ("click", function(event) {
   companyFormDOM.classList.add('hidden')
 })
 
+let novedadesyofertas =[ 
+{
+  imagen: "https://todo-fotografia.com/wp-content/uploads/2013/02/AFS_85_G_front.png",
+  nombre:"Objetivo AF-S Nikkor 85mm f/1.4G",
+  precio: "500$"
+
+
+},
+{
+
+  imagen:"https://www.percyphoto.com/2807-large_default/tripode-fotopro-dv-2-video.jpg",
+  nompbre:"Tripode Fotopro DV-2 video",
+  precio :"159$"
+
+
+},
+{
+
+  imagen: "https://www.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2023/02/nikon-d3200-2951910.jpg",
+  nompbre: "camara nikon",
+  precio: "450$"
+
+
+}]
