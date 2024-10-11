@@ -17,13 +17,17 @@ let companyClaimDOM = document.getElementById("companyClaim");
 let companyTextDOM = document.getElementById("companyText");
 let root = document.documentElement;
 
-companyNameDOM.textContent = companyData.name;
-tittlecompanyNameDOM.textContent = companyData.name;
-imageHeroDOM.src = companyData.imageUrl;
-companyClaimDOM.textContent = companyData.claim;
-companyTextDOM.textContent = companyData.text;
-root.style.setProperty("--primary-color", companyData.primaryColor);
-root.style.setProperty("--back-color", companyData.backgroundColor);
+function updateCompanyDOM (){
+  companyNameDOM.textContent = companyData.name;
+  tittlecompanyNameDOM.textContent = companyData.name;
+  imageHeroDOM.src = companyData.imageUrl;
+  companyClaimDOM.textContent = companyData.claim;
+  companyTextDOM.textContent = companyData.text;
+  root.style.setProperty("--primary-color", companyData.primaryColor);
+  root.style.setProperty("--back-color", companyData.backgroundColor);
+}
+
+updateCompanyDOM();
 
 // Boton save
 let botonEditCompanyDOM = document.getElementById("editCompanyBtn");
@@ -64,13 +68,13 @@ let buttonSaveDOM = document.getElementById("buttonSave");
 
 buttonSaveDOM.addEventListener("click", function (event) {
   event.preventDefault();
-  companyNameDOM.textContent = companynameinputDOM.value;
-  tittlecompanyNameDOM.textContent = companynameinputDOM.value;
-  imageHeroDOM.src = companyImageURLInputDOM.value;
-  companyClaimDOM.textContent = companyClaimInputDOM.value;
-  companyTextDOM.textContent = companyTextInputDOM.value;
-  root.style.setProperty("--primary-color", primaryColorInputDOM.value);
-  root.style.setProperty("--back-color", backgroundColorInputDOM.value);
+  companyData.name = companynameinputDOM.value;
+  companyData.imageUrl = companyImageURLInputDOM.value;
+  companyData.primaryColor = primaryColorInputDOM.value;
+  companyData.backgroundColor = backgroundColorInputDOM.value;
+  companyData.claim = companyClaimInputDOM.value;
+  companyData.text = companyTextInputDOM.value;
+  updateCompanyDOM ();
   companyFormDOM.classList.add("hidden");
 });
 
