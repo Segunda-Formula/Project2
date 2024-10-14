@@ -1,4 +1,4 @@
-const companyData = {
+let companyData = {
   name: "Acme Corporation",
   primaryColor: "#2c5545",
   backgroundColor: "#e3e3e3",
@@ -66,6 +66,7 @@ printCompany();
 function guardarLocalStorage() {
   localStorage.setItem('companyData', JSON.stringify(companyData));
 }
+
 function cargarLocalStorage() {
   const datosGuardados = localStorage.getItem('companyData');
   if (datosGuardados) {
@@ -74,6 +75,7 @@ function cargarLocalStorage() {
     companyData = defaultCompanyData;
   }
 }
+
 window.onload = function () {
   cargarLocalStorage();
   updateCompanyDOM();
