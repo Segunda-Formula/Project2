@@ -20,6 +20,10 @@ Nuestro objetico es lanzar **PageCraft**, una aplicación que permita a pequeño
 
 https://juanignaciofg.github.io/Project2/
 
+## Imagen
+
+![alt text](image.png)
+
 ## Contacto colaboradores
 
 
@@ -28,25 +32,9 @@ https://juanignaciofg.github.io/Project2/
 | <a href="https://github.com/juanignacioFG"> <img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> | <a href="https://github.com/monicasimoF5"> <img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> | <a href="https://github.com/LayGomez"> <img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> |
 | <a href="https://www.linkedin.com/in/juan-ignacio-fauro/"> <img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://www.linkedin.com/in/mónica-simó/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="www.linkedin.com/in/layla-gomez-vallejos"> <img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
+<br>
+<hr>
 
 ## 🚀 **Briefing del Proyecto: PageCraft**
 

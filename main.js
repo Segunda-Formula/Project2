@@ -17,7 +17,7 @@ let companyClaimDOM = document.getElementById("companyClaim");
 let companyTextDOM = document.getElementById("companyText");
 let root = document.documentElement;
 
-function updateCompanyDOM (){
+function updateCompanyDOM() {
   companyNameDOM.textContent = companyData.name;
   tittlecompanyNameDOM.textContent = companyData.name;
   imageHeroDOM.src = companyData.imageUrl;
@@ -52,7 +52,7 @@ let backgroundColorInputDOM = document.getElementById("backgroundColorInput");
 let companyClaimInputDOM = document.getElementById("companyClaimInput");
 let companyTextInputDOM = document.getElementById("companyTextInput");
 
-function printCompany () {
+function printCompany() {
   companynameinputDOM.setAttribute("value", companyData.name);
   companyImageURLInputDOM.setAttribute("value", companyData.imageUrl);
   primaryColorInputDOM.setAttribute("value", companyData.primaryColor);
@@ -61,8 +61,23 @@ function printCompany () {
   companyTextInputDOM.textContent = companyData.text;
 }
 
-printCompany ();
+printCompany();
 
+function guardarLocalStorage() {
+  localStorage.setItem('companyData', JSON.stringify(companyData));
+}
+function cargarLocalStorage() {
+  const datosGuardados = localStorage.getItem('companyData');
+  if (datosGuardados) {
+    companyData = JSON.parse(datosGuardados);
+  } else {
+    companyData = defaultCompanyData;
+  }
+}
+window.onload = function () {
+  cargarLocalStorage();
+  updateCompanyDOM();
+};
 // Botón Save Company
 let buttonSaveDOM = document.getElementById("buttonSave");
 
@@ -74,7 +89,8 @@ buttonSaveDOM.addEventListener("click", function (event) {
   companyData.backgroundColor = backgroundColorInputDOM.value;
   companyData.claim = companyClaimInputDOM.value;
   companyData.text = companyTextInputDOM.value;
-  updateCompanyDOM ();
+  updateCompanyDOM();
+  guardarLocalStorage();
   companyFormDOM.classList.add("hidden");
 });
 
