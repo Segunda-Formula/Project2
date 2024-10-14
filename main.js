@@ -69,11 +69,7 @@ function guardarLocalStorage() {
 
 function cargarLocalStorage() {
   const datosGuardados = localStorage.getItem('companyData');
-  if (datosGuardados) {
-    companyData = JSON.parse(datosGuardados);
-  } else {
-    companyData = defaultCompanyData;
-  }
+  companyData = JSON.parse(datosGuardados);
 }
 
 window.onload = function () {
