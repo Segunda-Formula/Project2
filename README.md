@@ -1,4 +1,68 @@
+#Estructura del README
+Título y descripción breve
+Tabla de contenidos
+Introducción
+Funcionamiento
+Tecnologías utilizadas
+Imágenes y videos
+Manual de instalación y deployment
+Roadmap
+Pre-requisitos
+Contribuyendo
+Pruebas de estilo de codificación
+Analizador de pruebas end-to-end
+Despliegue
+Licencia
+Contacto
+
 # PageCraft
+ 
+
+
+## Introducción
+
+Nuestro objetico es lanzar **PageCraft**, una aplicación que permita a pequeños comercios locales y de proximidad tener una presencia en internet de manera fácil y accesible. La meta es que los usuarios sin conocimientos técnicos puedan crear una página web personalizada que represente su negocio.
+
+## Funcionamiento
+
+**Como usuarios** necesitamos que se puedan modificar datos, imagenes y color en una nueva version de una estructura web y que estos queden cargados una vez se actualice la pagina
+
+## Tecnologías utilizadas
+
+![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=Javascript&logoColor=%23F7DF1E)![HTML](https://img.shields.io/badge/HTML-5A5A5A?style=for-the-badge&logo=HTML5&logoColor=E34F26)![CSS](https://img.shields.io/badge/CSS-000?style=for-the-badge&logo=css3&logoColor=E34F26)
+
+## Despliegue
+
+https://juanignaciofg.github.io/Project2/
+
+## Contacto colaboradores
+
+
+| **Juan ignacio** | **Mónica Simó** | **Layla Gomez**|
+|:-:|:-:|:-:|
+
+| <a href="https://github.com/juanignacioFG"> <img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> | <a href="https://github.com/monicasimoF5"> <img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> | <a href="https://github.com/LayGomez"> <img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> |
+| <a href="https://www.linkedin.com/in/juan-ignacio-fauro/"> <img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://www.linkedin.com/in/mónica-simó/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="www.linkedin.com/in/layla-gomez-vallejos"> <img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
+
+
+
+https://www.linkedin.com/in/mónica-simó/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 🚀 **Briefing del Proyecto: PageCraft**
 
