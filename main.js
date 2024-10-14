@@ -11,23 +11,23 @@ const companyData = {
 console.log(companyData);
 
 let companyNameDOM = document.getElementById("companyName");
-companyNameDOM.textContent = companyData.name;
-
 let tittlecompanyNameDOM = document.getElementById("tittlecompanyName");
-tittlecompanyNameDOM.textContent = companyData.name;
-
 let imageHeroDOM = document.getElementById("companyImage");
-imageHeroDOM.src = companyData.imageUrl;
-
 let companyClaimDOM = document.getElementById("companyClaim");
-companyClaimDOM.textContent = companyData.claim;
-
 let companyTextDOM = document.getElementById("companyText");
-companyTextDOM.textContent = companyData.text;
-
 let root = document.documentElement;
-root.style.setProperty("--primary-color", companyData.primaryColor);
-root.style.setProperty("--back-color", companyData.backgroundColor);
+
+function updateCompanyDOM (){
+  companyNameDOM.textContent = companyData.name;
+  tittlecompanyNameDOM.textContent = companyData.name;
+  imageHeroDOM.src = companyData.imageUrl;
+  companyClaimDOM.textContent = companyData.claim;
+  companyTextDOM.textContent = companyData.text;
+  root.style.setProperty("--primary-color", companyData.primaryColor);
+  root.style.setProperty("--back-color", companyData.backgroundColor);
+}
+
+updateCompanyDOM();
 
 // Boton save
 let botonEditCompanyDOM = document.getElementById("editCompanyBtn");
@@ -46,40 +46,35 @@ closeCompanyFormBtnDOM.addEventListener("click", function () {
 // nacho
 
 let companynameinputDOM = document.getElementById("companyNameInput");
-
-companynameinputDOM.setAttribute("value", companyData.name);
-
 let companyImageURLInputDOM = document.getElementById("companyImageURLInput");
-
-companyImageURLInputDOM.setAttribute("value", companyData.imageUrl);
-
 let primaryColorInputDOM = document.getElementById("primaryColorInput");
-
-primaryColorInputDOM.setAttribute("value", companyData.primaryColor);
-
 let backgroundColorInputDOM = document.getElementById("backgroundColorInput");
-
-backgroundColorInputDOM.setAttribute("value", companyData.backgroundColor);
-
 let companyClaimInputDOM = document.getElementById("companyClaimInput");
-
-companyClaimInputDOM.setAttribute("value", companyData.claim);
-
 let companyTextInputDOM = document.getElementById("companyTextInput");
 
-companyTextInputDOM.textContent = companyData.text;
+function printCompany () {
+  companynameinputDOM.setAttribute("value", companyData.name);
+  companyImageURLInputDOM.setAttribute("value", companyData.imageUrl);
+  primaryColorInputDOM.setAttribute("value", companyData.primaryColor);
+  backgroundColorInputDOM.setAttribute("value", companyData.backgroundColor);
+  companyClaimInputDOM.setAttribute("value", companyData.claim);
+  companyTextInputDOM.textContent = companyData.text;
+}
 
+printCompany ();
+
+// Botón Save Company
 let buttonSaveDOM = document.getElementById("buttonSave");
 
 buttonSaveDOM.addEventListener("click", function (event) {
   event.preventDefault();
-  companyNameDOM.textContent = companynameinputDOM.value;
-  tittlecompanyNameDOM.textContent = companynameinputDOM.value;
-  imageHeroDOM.src = companyImageURLInputDOM.value;
-  companyClaimDOM.textContent = companyClaimInputDOM.value;
-  companyTextDOM.textContent = companyTextInputDOM.value;
-  root.style.setProperty("--primary-color", primaryColorInputDOM.value);
-  root.style.setProperty("--back-color", backgroundColorInputDOM.value);
+  companyData.name = companynameinputDOM.value;
+  companyData.imageUrl = companyImageURLInputDOM.value;
+  companyData.primaryColor = primaryColorInputDOM.value;
+  companyData.backgroundColor = backgroundColorInputDOM.value;
+  companyData.claim = companyClaimInputDOM.value;
+  companyData.text = companyTextInputDOM.value;
+  updateCompanyDOM ();
   companyFormDOM.classList.add("hidden");
 });
 
@@ -101,7 +96,7 @@ let novedadesyofertas = [
       "https://www.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2023/02/nikon-d3200-2951910.jpg",
     nombre: "Camara Nikon",
     precio: "450$",
-  },A
+  },
 ];
 //save boton Personalizar productos
 let editProductBtnDOM = document.getElementById("editProductBtn");
