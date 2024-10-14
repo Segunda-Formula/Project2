@@ -1,19 +1,4 @@
-#Estructura del README
-Título y descripción breve
-Tabla de contenidos
-Introducción
-Funcionamiento
-Tecnologías utilizadas
-Imágenes y videos
-Manual de instalación y deployment
-Roadmap
-Pre-requisitos
-Contribuyendo
-Pruebas de estilo de codificación
-Analizador de pruebas end-to-end
-Despliegue
-Licencia
-Contacto
+
 
 # PageCraft
  
@@ -40,13 +25,12 @@ https://juanignaciofg.github.io/Project2/
 
 | **Juan ignacio** | **Mónica Simó** | **Layla Gomez**|
 |:-:|:-:|:-:|
-
 | <a href="https://github.com/juanignacioFG"> <img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> | <a href="https://github.com/monicasimoF5"> <img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> | <a href="https://github.com/LayGomez"> <img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> |
 | <a href="https://www.linkedin.com/in/juan-ignacio-fauro/"> <img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://www.linkedin.com/in/mónica-simó/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="www.linkedin.com/in/layla-gomez-vallejos"> <img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
 
 
 
-https://www.linkedin.com/in/mónica-simó/
+
 
 
 
